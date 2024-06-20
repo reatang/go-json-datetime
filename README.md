@@ -1,5 +1,7 @@
 # go-json-datetime
 
+简体中文 | [English](README_EN.md)
+
 方便的处理`golang`中`json time.Time`的小问题
 
 ## 安装
