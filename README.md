@@ -8,6 +8,11 @@
 
 ## 提供的时间类型
 
-- YYYY-MM-dd hh:mm:ss 格式：`jsondt.DateTime`
-- YYYY-MM-dd 格式：`jsondt.Date`
-- hh:mm:ss 格式：`jsondt.Time`
+- 编解码 YYYY-MM-dd hh:mm:ss 格式：`jsondt.DateTime`
+- 编解码 YYYY-MM-dd 格式：`jsondt.Date`
+- 编解码 hh:mm:ss 格式：`jsondt.Time`
+
+
+## 其他时间格式处理库
+
+[iso8601](https://github.com/relvacode/iso8601)

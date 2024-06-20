@@ -8,6 +8,11 @@ Conveniently process golang json `time.Time`
 
 ## Time type
 
-- YYYY-MM-dd hh:mm:ss ：`jsondt.DateTime`
-- YYYY-MM-dd ：`jsondt.Date`
-- hh:mm:ss ：`jsondt.Time`
+- codec YYYY-MM-dd hh:mm:ss ：`jsondt.DateTime`
+- codec YYYY-MM-dd ：`jsondt.Date`
+- codec hh:mm:ss ：`jsondt.Time`
+
+
+## Other json time
+
+[iso8601](https://github.com/relvacode/iso8601)
