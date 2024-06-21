@@ -20,7 +20,7 @@ func (t DateTime) MarshalJSON() ([]byte, error) {
 }
 
 func (t *DateTime) UnmarshalJSON(b []byte) error {
-	if isNull(b) {
+	if isEmpty(b) {
 		return nil
 	}
 
