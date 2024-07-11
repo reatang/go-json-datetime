@@ -13,7 +13,7 @@ type testJSONDateTime struct {
 
 func TestJSONTime_MarshalJSON(t *testing.T) {
 	data := testJSONDateTime{
-		CreatedAt: DateTime(time.Date(2020, time.April, 28, 1, 2, 3, 0, time.UTC)),
+		CreatedAt: DateTime{time.Date(2020, time.April, 28, 1, 2, 3, 0, time.UTC)},
 	}
 
 	bytes, err := json.Marshal(data)

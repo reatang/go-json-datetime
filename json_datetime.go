@@ -9,10 +9,12 @@ import (
 var _ json.Marshaler = (*DateTime)(nil)
 var _ json.Unmarshaler = (*DateTime)(nil)
 
-type DateTime time.Time
+type DateTime struct {
+	time.Time
+}
 
 func (t DateTime) String() string {
-	return time.Time(t).Format("2006-01-02 15:04:05")
+	return t.Time.Format("2006-01-02 15:04:05")
 }
 
 func (t DateTime) MarshalJSON() ([]byte, error) {
@@ -32,6 +34,6 @@ func (t *DateTime) UnmarshalJSON(b []byte) error {
 	if err != nil {
 		return err
 	}
-	*t = DateTime(tm)
+	*t = DateTime{tm}
 	return nil
 }
